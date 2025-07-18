@@ -1,0 +1,19 @@
+/* ===================== style.css ===================== */
+
+body { font-family: Arial, sans-serif; background-color: #222; color: #fff; text-align: center; margin: 0; padding: 2rem; }
+
+input, select, button { margin: 0.5rem; padding: 0.5rem; font-size: 16px; border-radius: 8px; border: none; }
+
+button { background: #00bcd4; color: white; cursor: pointer; }
+
+button:hover { background: #008c9e; }
+
+#hand { margin-top: 1rem; }
+
+.card { display: inline-block; margin: 0.25rem; padding: 1rem; border-radius: 10px; background: #fff; color: #000; font-weight: bold; cursor: pointer; min-width: 60px; }
+
+.card:hover { transform: scale(1.1); background: #f0f0f0; }
+
+#playerBoard div, #scoreBoard div { padding: 0.5rem; font-size: 18px; }
+
+#game, #roundOver { padding-top: 1rem; }
