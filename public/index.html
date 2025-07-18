@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNO: No Mercy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="lobby">
+    <h2>UNO: No Mercy</h2>
+    <input id="username" placeholder="Enter your name">
+    <select id="avatar">
+      <option value="🧙‍♂️">🧙‍♂️ Wizard</option>
+      <option value="🐉">🐉 Dragon</option>
+      <option value="👽">👽 Alien</option>
+      <option value="🤖">🤖 Robot</option>
+    </select><br>
+    <button onclick="createRoom()">Create Room</button>
+    <input id="roomCode" placeholder="Room Code">
+    <button onclick="joinRoom()">Join Room</button>
+  </div>  <div id="game" style="display:none;">
+    <h2 id="roomLabel"></h2>
+    <div id="playerBoard"></div>
+    <p>Top Card: <span id="topCard"></span> | Color: <span id="currentColor"></span></p>
+    <p id="turnLabel"></p>
+    <div id="hand"></div>
+    <button onclick="drawCard()">Draw Card</button>
+  </div>  <div id="roundOver" style="display:none;">
+    <h2 id="winnerMsg"></h2>
+    <div id="scoreBoard"></div>
+    <button onclick="location.reload()">Start New Game</button>
+  </div>  <script src="/socket.io/socket.io.js"></script>  <script src="client.js"></script></body>
+</html>
