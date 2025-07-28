@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IRCTC Autofill</title>
+</head>
+<body style="font-family:sans-serif; padding:20px;">
+  <h2>IRCTC Autofill – Amaan’s Booking Tool</h2>
+  <p>Open IRCTC Passenger Details page and click the button below.</p>
+  <button onclick="fillForm()" style="padding:10px 20px; font-size:16px;">Fill IRCTC Passenger Details</button>
+
+  <script>
+    function fillForm() {
+      try {
+        let f = document.getElementsByName;
+        f('addPassengerForm:psdetail:0:psgnName')[0].value='Amaan Rahman';
+        f('addPassengerForm:psdetail:0:psgnAge')[0].value='19';
+        f('addPassengerForm:psdetail:0:psgnGender')[0].value='M';
+        f('addPassengerForm:psdetail:0:berthChoice')[0].value='SU';
+
+        f('addPassengerForm:psdetail:1:psgnName')[0].value='Mokhlesur Rahman';
+        f('addPassengerForm:psdetail:1:psgnAge')[0].value='61';
+        f('addPassengerForm:psdetail:1:psgnGender')[0].value='M';
+        f('addPassengerForm:psdetail:1:berthChoice')[0].value='MB';
+
+        f('addPassengerForm:psdetail:2:psgnName')[0].value='Mallika Khatun';
+        f('addPassengerForm:psdetail:2:psgnAge')[0].value='46';
+        f('addPassengerForm:psdetail:2:psgnGender')[0].value='F';
+        f('addPassengerForm:psdetail:2:berthChoice')[0].value='LB';
+
+        f('addPassengerForm:psdetail:3:psgnName')[0].value='Hasan Ali Mondal';
+        f('addPassengerForm:psdetail:3:psgnAge')[0].value='45';
+        f('addPassengerForm:psdetail:3:psgnGender')[0].value='M';
+        f('addPassengerForm:psdetail:3:berthChoice')[0].value='MB';
+
+        f('addPassengerForm:psdetail:4:psgnName')[0].value='Tanima Khatun';
+        f('addPassengerForm:psdetail:4:psgnAge')[0].value='41';
+        f('addPassengerForm:psdetail:4:psgnGender')[0].value='F';
+        f('addPassengerForm:psdetail:4:berthChoice')[0].value='LB';
+
+        f('addPassengerForm:psdetail:5:psgnName')[0].value='Hena Mondal';
+        f('addPassengerForm:psdetail:5:psgnAge')[0].value='14';
+        f('addPassengerForm:psdetail:5:psgnGender')[0].value='F';
+        f('addPassengerForm:psdetail:5:berthChoice')[0].value='SL';
+
+        alert('✅ All passenger details filled!');
+      } catch(e) {
+        alert('⚠️ Please open the IRCTC Passenger Details page before clicking.');
+      }
+    }
+  </script>
+</body>
+</html>
